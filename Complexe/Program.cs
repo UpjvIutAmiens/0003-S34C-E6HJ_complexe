@@ -12,18 +12,18 @@ namespace Complexe
         {
             Complexe c1 = new Complexe(2, 4);
             Console.WriteLine("Nombre Complexe 1: ");
-            Console.WriteLine(string.Format("  Partie réelle : {0}", c1.PartieReelle));
-            Console.WriteLine(string.Format("  Partie imaginaire : {0}", c1.PartieImaginaire));
-            Console.WriteLine(string.Format("  Nombre Complexe : {0}", c1.Afficher()));
+            Console.WriteLine("  Partie réelle : {0}", c1.PartieReelle);
+            Console.WriteLine("  Partie imaginaire : {0}", c1.PartieImaginaire);
+            Console.WriteLine("  Nombre Complexe : {0}", c1.Afficher());
 
             Console.Out.WriteLine("\n");
             Complexe c2 = new Complexe();
             c2.PartieReelle = 3;
             c2.PartieImaginaire = -2;
             Console.WriteLine("Nombre Complexe 2: ");
-            Console.WriteLine(string.Format("  Partie réelle : {0}", c2.PartieReelle));
-            Console.WriteLine(string.Format("  Partie imaginaire : {0}", c2.PartieImaginaire));
-            Console.WriteLine(string.Format("  Nombre Complexe : {0}", c2.Afficher()));
+            Console.WriteLine("  Partie réelle : {0}", c2.PartieReelle);
+            Console.WriteLine("  Partie imaginaire : {0}", c2.PartieImaginaire);
+            Console.WriteLine("  Nombre Complexe : {0}", c2.Afficher());
 
 
             Console.Out.WriteLine("\n");

@@ -5,33 +5,33 @@ namespace Complexe
 {
     class Complexe
     {
-        private double partieReelle;                                  //partie réelle
-        private double partieImaginaire;                                  //partie imaginaire
+        private double _partieReelle;                                  //partie réelle
+        private double _partieImaginaire;                              //partie imaginaire
 
         public double PartieReelle
         {
-            get { return partieReelle; }
-            set { partieReelle = value; }
+            get { return _partieReelle; }
+            set { _partieReelle = value; }
         }
 
         public double PartieImaginaire
         {
-            get { return partieImaginaire; }
-            set { partieImaginaire = value; }
+            get { return _partieImaginaire; }
+            set { _partieImaginaire = value; }
         }
 
         public Complexe() { }
 
         public Complexe(double partieReelle, double partieImaginaire)
         {
-            this.partieReelle = partieReelle;
+            this._partieReelle = partieReelle;
         }
 
         public Complexe Plus(Complexe c)               //La méthode retourne un objet (référence)
         {
             double relle, imaginaire;
-            relle = this.partieReelle + c.partieReelle;
-            imaginaire = this.partieImaginaire + c.partieImaginaire;
+            relle = this._partieReelle + c._partieReelle;
+            imaginaire = this._partieImaginaire + c._partieImaginaire;
 
             Complexe rs = new Complexe(relle, imaginaire);
             return ;
@@ -46,21 +46,21 @@ namespace Complexe
         {
             StringBuilder sb = new StringBuilder();
 
-            if (partieImaginaire == 0)
-                sb.Append(partieReelle);
-            else if (partieImaginaire > 0)
+            if (_partieImaginaire == 0)
+                sb.Append(_partieReelle);
+            else if (_partieImaginaire > 0)
             {
-                if (partieImaginaire == 1)
-                    sb.Append(partieReelle + "+i");
+                if (_partieImaginaire == 1)
+                    sb.Append(_partieReelle + "+i");
                 else
-                    sb.Append(partieReelle + "+" + partieImaginaire + "i");
+                    sb.Append(_partieReelle + "+" + _partieImaginaire + "i");
             }
             else
             {
-                if (partieImaginaire == -1)
-                    sb.Append(partieReelle + "-i");
+                if (_partieImaginaire == -1)
+                    sb.Append(_partieReelle + "-i");
                 else
-                    sb.Append(partieReelle + "" + partieImaginaire + "i");
+                    sb.Append(_partieReelle + "" + _partieImaginaire + "i");
             }
 
             return sb.ToString();
